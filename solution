@@ -1,0 +1,29 @@
+package com.company;
+
+import javafx.util.Pair;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.HashMap;
+
+
+public class solution {
+    public <T> ArrayList<T> newArrayList(T ... arr){
+        ArrayList <T> arrayList = new ArrayList<>();
+        Collections.addAll(arrayList, arr);
+        return arrayList;
+    }
+
+    public <T> HashSet<T> newHastSet(T ... arr){
+        HashSet<T> hashSet = new HashSet<>();
+        Collections.addAll(hashSet, arr);
+        return hashSet;
+    }
+
+    public <K,V> HashMap<K,V> newHashMap(Pair<K,V> ... arr){
+        HashMap<K,V> hashMap = new HashMap<>();
+        for (Pair<K, V> kvPair : arr) hashMap.put(kvPair.getKey(), kvPair.getValue());
+        return hashMap;
+    }
+}
