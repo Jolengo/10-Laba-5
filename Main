@@ -1,0 +1,13 @@
+package com.company;
+
+import javafx.util.Pair;
+
+public class Main {
+
+    public static void main(String[] args) {
+        solution sol = new solution();
+        System.out.println(sol.newArrayList(1,2,3,3,4));
+        System.out.println(sol.newHastSet(1,2,3,3,4));
+        System.out.println(sol.newHashMap(new Pair<>("Alex", 1), new Pair<>("Denis", 2), new Pair<>("Nikolay", 0)));
+    }
+}
